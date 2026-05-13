@@ -1,0 +1,148 @@
+/* Genel Stil */
+* { box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+}
+
+/* Navigasyon */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.logo { font-size: 24px; font-weight: bold; color: #0056b3; }
+.logo span { font-weight: 300; color: #333; }
+.links a { text-decoration: none; color: #444; margin-left: 20px; font-weight: 600; }
+.btn-nav { background: #0056b3; color: white !important; padding: 10px 22px; border-radius: 5px; }
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,86,179,0.7), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero h1 { font-size: 4rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+.hero p { font-size: 1.2rem; }
+.btn-main {
+    display: inline-block;
+    background: #fbbf24; /* Dikkat çekici sarı/altın tonu */
+    color: #1e1e1e;
+    padding: 18px 45px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.btn-main:hover { background: #f59e0b; transform: translateY(-3px); }
+
+/* Sayılar */
+.stats { display: flex; justify-content: space-around; padding: 50px 10%; background: #0056b3; color: white; text-align: center; }
+.stat-number { font-size: 50px; font-weight: bold; display: block; }
+
+/* Hizmetler */
+.services { padding: 80px 10%; text-align: center; }
+.service-container { display: flex; gap: 25px; margin-top: 40px; }
+.service-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    flex: 1;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-top: 4px solid #0056b3;
+}
+.service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+
+/* Galeri */
+.gallery { padding: 80px 10%; text-align: center; background: white; }
+.gallery-grid { display: flex; justify-content: center; gap: 30px; margin-top: 30px; }
+.gallery-item img { border-radius: 8px; width: 100%; max-width: 380px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+/* Yorumlar */
+.testimonials { padding: 80px 10%; text-align: center; background: #f1f5f9; }
+.testimonial-container { display: flex; gap: 30px; justify-content: center; margin-top: 40px; }
+.testi-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    max-width: 450px;
+    position: relative;
+}
+.testi-card h4 { color: #0056b3; margin-top: 20px; }
+
+/* Randevu Formu */
+.appointment-section { padding: 80px 10%; text-align: center; background: #ffffff; }
+.appointment-form {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    background: #f8fafc;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+.appointment-form input, .appointment-form select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+.appointment-form button {
+    width: 100%;
+    padding: 18px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.appointment-form button:hover { background: #004494; }
+
+/* Footer */
+.footer { background: #0f172a; color: white; padding: 50px 10%; text-align: center; }
+.footer-bottom { margin-top: 30px; border-top: 1px solid #1e293b; padding-top: 20px; color: #94a3b8; }
+/* Yukarı Çık Butonu Tasarımı */
+#myBtn {
+    display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99;
+    border: none; outline: none; background-color: #0056b3; color: white;
+    cursor: pointer; padding: 15px; border-radius: 50%; font-size: 18px;
+}
+
+/* Hakkımızda Bölümü Tasarımı */
+.about-section { padding: 60px 10%; background: white; }
+.about-container { display: flex; align-items: center; gap: 40px; }
+.about-text { flex: 1; }
+.about-image { flex: 1; }
+.about-image img { width: 100%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.work-hours { list-style: none; padding: 20px; background: #f8fafc; border-radius: 10px; margin-top: 20px; }
+.work-hours li { margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+
+/* Akıcı Kaydırma */
+html { scroll-behavior: smooth; }
+.whatsapp-btn {
+    position: fixed; bottom: 20px; left: 30px; 
+    background: #25d366; color: white; padding: 12px 20px;
+    border-radius: 30px; text-decoration: none; font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000;
+}

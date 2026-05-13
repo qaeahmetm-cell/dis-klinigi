@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmet Karaman Diş Kliniği | Sağlıklı Gülüşler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Yukarı Çık">↑</button>
+
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar">
+        <div class="logo">Ahmet Karaman <span>Diş Kliniği</span></div>
+        <div class="links">
+            <a href="#">Ana Sayfa</a>
+            <a href="#hizmetler">Hizmetler</a>
+            <a href="#randevu" class="btn-nav">Randevu Al</a>
+        </div>
+    </nav>
+
+    <!-- Giriş (Hero) Alanı -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Dr. Ahmet Karaman</h1>
+            <p>Modern Diş Hekimliği ile Hayalinizdeki Gülüşe Kavuşun.</p>
+            <a href="#randevu" class="btn-main">Hemen Randevu Al</a>
+        </div>
+    </header>
+
+    <!-- Sayılarla Biz Bölümü -->
+    <section class="stats">
+	<!-- HAKKIMIZDA BÖLÜMÜ -->
+<section id="hakkimizda" class="about-section">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>Dr. Ahmet Karaman Kimdir?</h2>
+            <p>2010 yılından bu yana Elazığ'da modern diş hekimliği teknolojilerini kullanarak hastalarımıza en iyi hizmeti vermekteyiz.</p>
+            <ul class="work-hours">
+                <li><strong>Pazartesi - Cuma:</strong> 09:00 - 18:00</li>
+                <li><strong>Cumartesi:</strong> 10:00 - 15:00</li>
+                <li><strong>Pazar:</strong> Kapalı</li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=80" alt="Dr. Ahmet Karaman">
+        </div>
+    </div>
+</section>
+        <div class="stat-item">
+            <span class="stat-number">10k+</span>
+            <p>Başarılı Tedavi</p>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <p>Yıllık Deneyim</p>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">%100</span>
+            <p>Hasta Memnuniyeti</p>
+        </div>
+    </section>
+
+    <!-- Hizmetlerimiz Bölümü -->
+    <section id="hizmetler" class="services">
+        <h2>Klinik Hizmetlerimiz</h2>
+		<section class="faq">
+    <h2>Sıkça Sorulan Sorular</h2>
+    <div class="faq-item">
+        <button class="accordion">İmplant tedavisi ne kadar sürer?</button>
+        <div class="panel"><p>Tedavi süreci vakaya göre değişmekle birlikte genellikle 3-6 ay arasındadır.</p></div>
+    </div>
+    <div class="faq-item">
+        <button class="accordion">Diş beyazlatma zararlı mıdır?</button>
+        <div class="panel"><p>Uzman kontrolünde yapılan beyazlatma işleminin dişlere bir zararı yoktur.</p></div>
+    </div>
+</section>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Diş Beyazlatma</h3>
+                <p>Kısa sürede, güvenli ve kalıcı beyazlık sağlıyoruz.</p>
+            </div>
+            <div class="service-card">
+                <h3>İmplant Tedavisi</h3>
+                <p>En son teknoloji materyallerle ömürlük çözümler.</p>
+            </div>
+            <div class="service-card">
+                <h3>Estetik Gülüş</h3>
+                <p>Size özel gülüş tasarımı ile özgüveninizi tazeleyin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Başarı Hikayeleri (Galeri) -->
+    <section class="gallery">
+        <h2>Başarı Hikayelerimiz</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=400&q=80" alt="Önce Sonra 1">
+                <p>Estetik Dolgu</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1460676749132-8fca24666f52?auto=format&fit=crop&w=400&q=80" alt="Önce Sonra 2">
+                <p>Gülüş Tasarımı</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hasta Yorumları Bölümü -->
+    <section class="testimonials">
+        <h2>Hastalarımız Ahmet Bey Hakkında Ne Diyor?</h2>
+        <div class="testimonial-container">
+            <div class="testi-card">
+                <p>"Ahmet Bey'in ilgisi ve tecrübesi sayesinde dişçi korkumu yendim. Kesinlikle tavsiye ederim."</p>
+                <h4>- Murat S.</h4>
+            </div>
+            <div class="testi-card">
+                <p>"Kanal tedavisi için gelmiştim, hiç ağrı duymadım. Ekibe çok teşekkürler."</p>
+                <h4>- Elif D.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Randevu Formu Alanı -->
+    <section id="randevu" class="appointment-section">
+        <h2>Dr. Ahmet Karaman'dan Randevu Al</h2>
+        <form class="appointment-form">
+            <input type="text" placeholder="Adınız Soyadınız" required>
+            <input type="tel" placeholder="Telefon Numaranız" required>
+            <select required>
+                <option value="">İstediğiniz Tedavi</option>
+                <option>Diş Beyazlatma</option>
+                <option>İmplant</option>
+                <option>Kanal Tedavisi</option>
+                <option>Genel Muayene</option>
+            </select>
+            <button type="submit">Randevu Talebi Gönder</button>
+        </form>
+    </section>
+
+    <!-- İletişim Footer -->
+    <a href="https://wa.me/905421596923" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
+</a>
+	<footer class="footer">
+    <div class="footer-info">
+        <h3>Ahmet Karaman Diş Kliniği</h3>
+        <p>📍 Gazi Caddesi, No:42 (Merkez) Elazığ</p>
+        <p>📞 0542 159 69 23</p>
+    </div>
+</footer>
+    <!-- JavaScript -->
+    <script>
+        document.querySelector('.appointment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Teşekkürler Sayın ' + document.querySelector('input[type="text"]').value + '! Ahmet Karaman Diş Kliniği randevu talebinizi aldı. Sizi arayacağız.');
+            this.reset();
+        });
+    </script>
+<script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    function topFunction() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+</body>
+</html>
